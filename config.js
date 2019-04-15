@@ -1,6 +1,6 @@
 prop = {
     //TODO Change that to the actual API address
-    'jsonqbAPIuri' : 'http://losd.staging.derilinx.com:8082/',
+    'jsonqbAPIuri' : 'https://json-qb-api.losd-dck.staging.derilinx.com/',
     'dataCubeURI' : getParameterByName('dataCubeURI')
 };
 

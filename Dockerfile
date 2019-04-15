@@ -10,9 +10,11 @@ RUN git clone https://github.com/LOSD-Data/CubeVisualizer.git /var/www/CubeVisua
 # Copy config file
 COPY config.js /var/www/CubeVisualizer/js/config.js
 
+WORKDIR /var/www/CubeVisualizer
+
 # Configure port
 EXPOSE  8000
 
 # Run python SimpleHTTPServer
 CMD cd /var/www/CubeVisualizer/ && \
-    python -m SimpleHTTPServer 8000
+    /usr/bin/python -m SimpleHTTPServer 8000
